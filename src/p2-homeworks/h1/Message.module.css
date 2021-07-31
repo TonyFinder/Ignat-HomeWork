@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.forImage {
+    justify-content: flex-end;
+}
+
+.forImage img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.blackbox {
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+}
+
+.name {
+    color: blueviolet;
+}
+
+.message {
+    color: white;
+}
+
+.time {
+    color: green;
+}
