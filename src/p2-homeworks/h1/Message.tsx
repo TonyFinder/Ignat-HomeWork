@@ -14,13 +14,14 @@ function Message(props: messageType) {
             <div className={c.forImage}>
                 <img src={props.avatar} alt="avatar"/>
             </div>
+            <div className={c.angle}/>
             <div className={c.blackbox}>
                 <div>
                     <div><span className={c.name}>{props.name}</span></div>
                     <div><span className={c.message}>{props.message}</span></div>
                 </div>
-                <div>
-                    <span className={c.time}>{props.time}</span>
+                <div className={c.time}>
+                    <span>{props.time}</span>
                 </div>
             </div>
         </div>
