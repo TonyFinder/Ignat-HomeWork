@@ -1,11 +1,9 @@
-.someClass {
-
-}
-
 .error {
     border: 1px solid red;
 }
-
+.error:focus {
+    outline: none;
+}
 .errorText {
     color: red;
 }
