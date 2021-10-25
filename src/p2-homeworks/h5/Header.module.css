@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+.main:hover .links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    animation: .5s;
+}
+.main:hover .square {
+    opacity: 0;
+    width: 0;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background: orange;
+    border-radius: 15px;
+    border: 3px solid green;
+}
+
+.links {
+    display: none;
+}

@@ -1,7 +1,10 @@
 .checkbox {
-
+    margin: 10px;
+    border-radius: 4px;
 }
 
 .spanClassName {
-
+    margin-left: 5px;
+    font-weight: bold;
 }
+

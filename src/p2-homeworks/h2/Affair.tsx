@@ -15,11 +15,11 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div className={d.container}>
+            <button onClick={deleteCallback}>X</button>
             <div className={d.signs}>
                 <div>{props.affair.name}</div>
                 <div>{props.affair.priority}</div>
             </div>
-            <button onClick={deleteCallback}>X</button>
         </div>
     )
 }

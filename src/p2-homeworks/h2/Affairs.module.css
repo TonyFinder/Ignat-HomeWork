@@ -1,3 +1,9 @@
-.someClass {
+.buttons {
 
+}
+
+.buttons button {
+    margin: 5px;
+    background: green;
+    color: white;
 }

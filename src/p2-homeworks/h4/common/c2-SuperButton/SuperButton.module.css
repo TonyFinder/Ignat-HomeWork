@@ -1,7 +1,21 @@
 .default {
-
+    margin: 5px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom left, blue, green);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
 }
 
 .red {
-    background: red;
+    margin: 5px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom left, red, palevioletred);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+}
+button:disabled {
+    background: grey;
+    opacity: 0.6;
 }

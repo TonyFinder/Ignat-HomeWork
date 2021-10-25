@@ -30,6 +30,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 
     return (
         <label>
+
             <input
                 type={'checkbox'}
                 onChange={onChangeCallback}

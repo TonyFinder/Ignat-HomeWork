@@ -11,3 +11,12 @@
 .testSpanError {
     color: blue;
 }
+.forButtons {
+    display: flex;
+    flex-direction: column;
+}
+.forCheckbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
