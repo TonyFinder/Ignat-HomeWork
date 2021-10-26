@@ -1,17 +1,20 @@
 .container {
  display: flex;
- margin: 5px;
-}
-
-.container button {
- background: red;
 }
 
 .signs {
  width: 200px;
  display: flex;
  justify-content: space-between;
+ align-items: center;
  margin-left: 5px;
  font-size: 18px;
  font-weight: bold;
+}
+.signs div:first-child {
+ width: 70%;
+}
+.signs div:last-child {
+ width: 30%;
+ text-align: center;
 }

@@ -8,8 +8,11 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    animation: .5s;
 }
+.main:hover .links a {
+    text-decoration: none;
+}
+
 .main:hover .square {
     opacity: 0;
     width: 0;

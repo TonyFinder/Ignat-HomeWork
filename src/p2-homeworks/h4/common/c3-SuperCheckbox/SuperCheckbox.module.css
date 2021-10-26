@@ -1,10 +1,42 @@
-.checkbox {
-    margin: 10px;
-    border-radius: 4px;
+.main {
+    position: relative;
 }
 
-.spanClassName {
-    margin-left: 5px;
+.checkbox {
+    appearance: none;
+}
+
+.label {
+    padding-left: 20px;
     font-weight: bold;
 }
+.labelBefore:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background: antiquewhite;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+.labelAfter:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background: antiquewhite url("https://img.icons8.com/fluency/16/000000/checkmark.png") no-repeat;
+    border: 2px solid grey;
+    border-radius: 6px;
+}

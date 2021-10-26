@@ -1,4 +1,4 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
+import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes, MouseEventHandler} from 'react'
 import s from './SuperCheckbox.module.css'
 
 // тип пропсов обычного инпута
@@ -7,6 +7,8 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 type SuperCheckboxPropsType = DefaultInputPropsType & {
     onChangeChecked?: (checked: boolean) => void
     spanClassName?: string
+    checked: boolean
+    onClickChecked: () => void
 }
 
 const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
@@ -14,6 +16,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeChecked,
         className, spanClassName,
+        checked, onClickChecked,
         children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
 
         ...restProps// все остальные пропсы попадут в объект restProps
@@ -25,21 +28,24 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 
         // сделайте так чтоб работал onChange и onChangeChecked
     }
+    const onClickCallback = () => {
+        onClickChecked()
+    }
 
-    const finalInputClassName = `${s.checkbox} ${className ? className : ''}`
+    const finalInputClassName = checked ? `${s.labelBefore} ${s.label}` : `${s.labelAfter} ${s.label}`
 
     return (
-        <label>
-
+        <div className={s.main}>
+            <label className={finalInputClassName}>
             <input
                 type={'checkbox'}
-                onChange={onChangeCallback}
-                className={finalInputClassName}
-
+                onClick={onClickCallback}
+                className={s.checkbox}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
             />
-            {children && <span className={s.spanClassName}>{children}</span>}
-        </label> // благодаря label нажатие на спан передастся в инпут
+                {children && <span className={s.spanClassName}>{children}</span>}
+            </label> {/*благодаря label нажатие на спан передастся в инпут*/}
+        </div>
     )
 }
 

@@ -1,9 +1,47 @@
-.error {
-    border: 1px solid red;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.error:focus {
+.main button {
+    margin: 10px;
+}
+.main >div:first-child {
+    font-style: italic;
+    font-weight: bold;
+    opacity: 0.4;
+}
+.main div:last-child span {
+    font-weight: bold;
+    font-size: 20px;
+    color: darkblue;
+}
+.main >div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.superInput {
+    border: 3px solid green;
+    background: lime;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.superInput:focus {
     outline: none;
 }
-.errorText {
+
+.errorInput {
+    border: 3px solid red;
+    background: palevioletred;
+    border-radius: 6px;
+    margin: 5px;
+}
+.errorInput:focus {
+    outline: none;
+}
+
+.error {
     color: red;
 }
