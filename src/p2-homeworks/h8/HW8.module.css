@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.allList {
+    background: linear-gradient(to top left, orange, lime);
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    padding-bottom: 5px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+.buttons {
+    display: flex;
+}
