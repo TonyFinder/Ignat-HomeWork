@@ -4,9 +4,10 @@ import HW2 from '../../h2/HW2'
 import HW3 from '../../h3/HW3'
 import HW4 from '../../h4/HW4'
 import s from './PreJunior.module.css'
+import HW6 from '../../h6/HW6';
 
 function PreJunior() {
-    const [collapse, setCollapse] = useState<Array<boolean>>([false, false, false, false])
+    const [collapse, setCollapse] = useState<Array<boolean>>([false, false, false, false, false])
     const setHandler = (hw: number) => {
         const newCollapse = [...collapse]
         newCollapse[hw - 1] = !newCollapse[hw - 1]
@@ -23,7 +24,8 @@ function PreJunior() {
             {collapse[2] && <HW3/>}
             <button className={s.tasks} onClick={() => setHandler(4)}>Homeworks #4</button>
             {collapse[3] && <HW4/>}
-            {/*<HW6/>*/}
+            <button className={s.tasks} onClick={() => setHandler(5)}>Homeworks #6</button>
+            {collapse[4] && <HW6/>}
         </div>
     )
 }
