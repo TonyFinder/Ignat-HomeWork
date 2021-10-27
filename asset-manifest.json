@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Ignat-HomeWork/static/css/main.2bf4af62.chunk.css",
-    "main.js": "/Ignat-HomeWork/static/js/main.d1c84f44.chunk.js",
-    "main.js.map": "/Ignat-HomeWork/static/js/main.d1c84f44.chunk.js.map",
+    "main.js": "/Ignat-HomeWork/static/js/main.5f403426.chunk.js",
+    "main.js.map": "/Ignat-HomeWork/static/js/main.5f403426.chunk.js.map",
     "runtime-main.js": "/Ignat-HomeWork/static/js/runtime-main.308968a6.js",
     "runtime-main.js.map": "/Ignat-HomeWork/static/js/runtime-main.308968a6.js.map",
     "static/js/2.59970209.chunk.js": "/Ignat-HomeWork/static/js/2.59970209.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.308968a6.js",
     "static/js/2.59970209.chunk.js",
     "static/css/main.2bf4af62.chunk.css",
-    "static/js/main.d1c84f44.chunk.js"
+    "static/js/main.5f403426.chunk.js"
   ]
 }
