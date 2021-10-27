@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.labelBefore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    width: 25px;
+    height: 25px;
+
+    background: url("https://img.icons8.com/fluency/25/000000/circled.png") no-repeat;
+    font-size: 20px;
+}
+
+.labelAfter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    width: 25px;
+    height: 25px;
+
+    background: url("https://img.icons8.com/fluency/25/000000/checked.png") no-repeat;
+    font-size: 20px;
+}
+
+.input {
+    display: none;
+}

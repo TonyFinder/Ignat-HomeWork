@@ -1,0 +1,11 @@
+.main {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+
+    background: linear-gradient(to left, green, gold);
+    background-color: lightgreen;
+    font-size: 16px;
+    font-weight: bold;
+    color: darkblue;
+}

@@ -20,7 +20,6 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
     const onClickChange = () => {
         setChecked(!checked)
-        console.log(checked)
     }
 
     return (

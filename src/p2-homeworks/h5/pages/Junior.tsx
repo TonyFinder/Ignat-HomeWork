@@ -1,17 +1,19 @@
-import React from 'react'
-import HW1 from '../../h1/HW1';
-import HW2 from '../../h2/HW2';
-import HW3 from '../../h3/HW3';
-import HW4 from '../../h4/HW4';
+import React, {useState} from 'react'
+import s from './Junior.module.css';
+import HW7 from '../../h7/HW7';
 
 function Junior() {
+    const [collapse, setCollapse] = useState<Array<boolean>>([false])
+    const setHandler = (hw: number) => {
+        const newCollapse = [...collapse]
+        newCollapse[hw - 1] = !newCollapse[hw - 1]
+        setCollapse(newCollapse)
+    }
+
     return (
-        <div>
-            {/*<HW7/>*/}
-            {/*<HW8/>*/}
-            {/*<HW9/>*/}
-            {/*<HW10/>*/}
-            {/*<HW11/>*/}
+        <div className={s.main}>
+            <button className={s.tasks} onClick={() => setHandler(1)}>Homeworks #7</button>
+            {collapse[0] && <HW7/>}
         </div>
     )
 }
