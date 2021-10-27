@@ -4,7 +4,7 @@ import HW7 from '../../h7/HW7';
 import HW8 from '../../h8/HW8';
 
 function Junior() {
-    const [collapse, setCollapse] = useState<Array<boolean>>([false, true])
+    const [collapse, setCollapse] = useState<Array<boolean>>([false, false])
     const setHandler = (hw: number) => {
         const newCollapse = [...collapse]
         newCollapse[hw - 1] = !newCollapse[hw - 1]
