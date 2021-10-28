@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.dateTime {
+    font-weight: bold;
+    height: 45px;
+    width: 90px;
+}
