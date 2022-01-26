@@ -4,9 +4,10 @@ import HW7 from '../../h7/HW7';
 import HW8 from '../../h8/HW8';
 import HW9 from '../../h9/HW9';
 import HW10 from '../../h10/HW10';
+import HW11 from '../../h11/HW11';
 
 function Junior() {
-    const [collapse, setCollapse] = useState<Array<boolean>>([false, false, false, false])
+    const [collapse, setCollapse] = useState<Array<boolean>>([false, false, false, false, false])
     const setHandler = (hw: number) => {
         const newCollapse = [...collapse]
         newCollapse[hw - 1] = !newCollapse[hw - 1]
@@ -23,6 +24,8 @@ function Junior() {
             {collapse[2] && <HW9/>}
             <button className={s.tasks} onClick={() => setHandler(4)}>Homeworks #10</button>
             {collapse[3] && <HW10/>}
+            <button className={s.tasks} onClick={() => setHandler(5)}>Homeworks #11</button>
+            {collapse[4] && <HW11/>}
         </div>
     )
 }

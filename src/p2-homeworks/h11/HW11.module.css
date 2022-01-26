@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.blocks {
+    display: flex;
+    width: 300px;
+    height: 35px;
+    align-items: center;
+}
+.text {
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.attention {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 35px;
+}
