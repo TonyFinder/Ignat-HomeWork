@@ -24,7 +24,7 @@ function Routes() {
             <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
             <Route path={PATH.JUNIOR} render={() => <Junior/>}/>
             <Route path={PATH.JUNIOR_PLUS} render={() => <JuniorPlus/>}/>
-                // add routes
+                {/*add routes*/}
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
             <Route render={() => <Error404/>}/>

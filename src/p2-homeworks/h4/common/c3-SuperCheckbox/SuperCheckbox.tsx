@@ -1,4 +1,4 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes, MouseEventHandler} from 'react'
+import React, {DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import s from './SuperCheckbox.module.css'
 
 // тип пропсов обычного инпута
@@ -22,17 +22,17 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
-    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange && onChange(e)
-        onChangeChecked && onChangeChecked(e.currentTarget.checked)
-
-        // сделайте так чтоб работал onChange и onChangeChecked
-    }
+    // const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+    //     onChange && onChange(e)
+    //     onChangeChecked && onChangeChecked(e.currentTarget.checked)
+    //
+    //     // сделайте так чтоб работал onChange и onChangeChecked
+    // }
     const onClickCallback = () => {
         onClickChecked()
     }
 
-    const finalInputClassName = checked ? `${s.labelBefore} ${s.label}` : `${s.labelAfter} ${s.label}`
+    const finalInputClassName = checked ? `${s.labelAfter} ${s.label}` : `${s.labelBefore} ${s.label}`
 
     return (
         <div className={s.main}>

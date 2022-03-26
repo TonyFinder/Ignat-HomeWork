@@ -1,8 +1,8 @@
 .App {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background: linear-gradient(to bottom right, orange, lime);
+    min-height: 100vh;
 }
 .header {
     display: flex;
